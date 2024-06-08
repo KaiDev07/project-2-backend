@@ -19,7 +19,9 @@ export const refresh = async (req, res) => {
     try {
         if (req.user) {
             console.log(req.user)
-            res.end()
+            res.status(200).json({
+                user: req.user,
+            })
         } else {
             throw Error('User is not authorized')
         }
