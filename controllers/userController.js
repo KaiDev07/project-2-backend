@@ -18,7 +18,6 @@ export const logout = async (req, res) => {
 export const refresh = async (req, res) => {
     try {
         if (req.user) {
-            console.log(req.user)
             res.status(200).json({
                 user: req.user,
             })
