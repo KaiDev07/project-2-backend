@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 app.set('trust proxy', 1)
 app.use(
     cors({
-        origin: true,
+        origin: process.env.CLIENT_URL,
         credentials: true,
     })
 )
