@@ -28,5 +28,5 @@ app.use(
 )
 passportUtil(app)
 
-// routes
+// route
 app.use('/user', userRoutes)
